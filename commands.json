@@ -1,11 +1,17 @@
 {
   "close_window": ["alt", "f4"],
-  "arrow_up": ["up"],
-  "arrow_down": ["down"],
-  "arrow_left": ["left"],
-  "arrow_right": ["right"],
+  "up": ["up"],
+  "down": ["down"],
+  "left": ["left"],
+  "right": ["right"],
+  "enter": ["enter"],
   "terminal": ["winleft", "enter"],
-  "playpause": ["playpause"],
-  "volume_up": ["volumeup"],
-  "volume_down": ["volumedown"]
+  "playpause": ["space"],
+  "volume_up": ["up"],
+  "volume_down": ["down"],
+  "stop": ["stop"],
+  "forward": ["right"],
+  "backward": ["left"],
+  "speed_up": ["add"],
+  "speed_down": ["-"]
 }
