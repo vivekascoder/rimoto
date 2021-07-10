@@ -3,5 +3,9 @@
   "arrow_up": ["up"],
   "arrow_down": ["down"],
   "arrow_left": ["left"],
-  "arrow_right": ["right"]
+  "arrow_right": ["right"],
+  "terminal": ["winleft", "enter"],
+  "playpause": ["playpause"],
+  "volume_up": ["volumeup"],
+  "volume_down": ["volumedown"]
 }
