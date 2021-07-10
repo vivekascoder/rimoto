@@ -13,5 +13,6 @@
   "forward": ["right"],
   "backward": ["left"],
   "speed_up": ["add"],
-  "speed_down": ["-"]
+  "speed_down": ["-"],
+  "backspace": ["backspace"]
 }

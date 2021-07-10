@@ -24,11 +24,16 @@ async def consumer_handler(websocket, path):
   commands = get_commands(CMD_PATH)
   while True:
     message = await websocket.recv()
-    print(f"[] Message Recieved. {message}")
-    if message in commands:
-      pyautogui.hotkey(*commands[message])
-    else:
-      print('Command not found %' %(message))
+    data = json.loads(message)
+    print(data)
+    if data['type'] == 'type_keys':
+      if (message:=data['cmd']) in commands:
+        pyautogui.hotkey(*commands[message])
+      else:
+        print(f'Command not found {message}')
+    elif data['type'] == 'type_key':
+      print(f"type_key event recieved, with key {data['key']}")
+      pyautogui.press([data['key']])
 
 async def producer_handler(websocket, path):
   print("[] Producer Process")
