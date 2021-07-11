@@ -8,6 +8,11 @@ import pyautogui
 import os
 import psutil
 import json
+import threading
+# import ssl
+# import pathlib
+import http.server
+import socketserver
 
 from config import CMD_PATH
 
@@ -61,9 +66,22 @@ async def server(websocket, path):
     task.cancel()
 
 
+
 def main():
   print("Starting Server 0.0.0.0:5678")
-  start_server = websockets.serve(server, '0.0.0.0', 5678)
+  # ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
+  # localhost_pem = os.path.join(os.getcwd(), "privkey.pem")
+  # print(pathlib.Path(__file__))
+  # ssl_context.load_cert_chain(localhost_pem)
+
+  start_server = websockets.serve(
+    server, 
+    '0.0.0.0', 
+    5678,
+    # ssl=ssl_context
+  )
+  # web_server_thread = threading.Thread(target=run_web_server, args=())
+  # web_server_thread.start()
   asyncio.get_event_loop().run_until_complete(start_server)
   asyncio.get_event_loop().run_forever()
 
