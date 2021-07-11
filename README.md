@@ -3,7 +3,7 @@
 Rimoto Web is a simple web app that communicates with a websocket server called rimoto which allow you control your computer with any device like phone.
 
 <p align="center">
-  <img src="./rimoto-web/src/assets/rimoto.png" />
+  <img src="./img/rimoto.png" />
 </p>
 
 ## How to use it ?
@@ -43,13 +43,13 @@ build that web app that can save us.
 ## Accomplishments that we're proud of.
 - The web app can show the live CPU and RAM usage of your computer.
 <p align="center">
-  <img src="./rimoto-web/src/assets/cpu-ram.png" />
+  <img src="./img/cpu-ram.png" />
 </p>
 
 - It can run on any device which ca run a web browser.
 - The web app can also be used as a keyboard, whatever you type in the textbox will be reflected in your computer as well.
 <p align="center">
-  <img src="rimoto-web/src/assets/keyboard.png" />
+  <img src="./img/keyboard.png" />
 </p>
 
 ## What we learned
